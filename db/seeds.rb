@@ -7,6 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Task.create(content: 'test content 1')
-Task.create(content: 'test content 2')
-Task.create(content: 'test content 3')
+(1..100).each do |number|
+  Task.create(content: 'test content ' + number.to_s, status: 'status ' + number.to_s)
+end
